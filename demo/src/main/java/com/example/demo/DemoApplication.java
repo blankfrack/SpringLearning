@@ -16,6 +16,8 @@ public class DemoApplication {
 		// Commit on master
 		
 		// Commit from command line
+		
+		// Another commit from the command line
 	}
 
 }
