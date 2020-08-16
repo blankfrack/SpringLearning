@@ -14,6 +14,8 @@ public class DemoApplication {
 		// test from github.com
 
 		// Commit on master
+		
+		// Commit from command line
 	}
 
 }
