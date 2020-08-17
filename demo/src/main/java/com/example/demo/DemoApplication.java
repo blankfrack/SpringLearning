@@ -20,5 +20,10 @@ public class DemoApplication {
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s!", name);
 	}
+	
+	@GetMapping("/home")
+	public String home() {
+		return "There's no place like Home.";
+	}
 
 }
