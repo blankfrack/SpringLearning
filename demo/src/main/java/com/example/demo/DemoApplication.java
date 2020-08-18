@@ -25,5 +25,10 @@ public class DemoApplication {
 	public String home() {
 		return "There's no place like Home.";
 	}
+	
+	@GetMapping("/add")
+	public String add(@RequestParam(value = "firstNumber", defaultValue = "0") int firstNumber, @RequestParam(value = "secondNumber", defaultValue = "0") int secondNumber) {
+		return String.format("Adding %h to %h equals %h!", firstNumber, secondNumber, (firstNumber+secondNumber));
+	}
 
 }
