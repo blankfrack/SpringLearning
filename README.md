@@ -1,3 +1,3 @@
 # SpringLearning
 
-Just a simple project to learn Spring.
+_Just a simple project to learn Spring._
