@@ -10,23 +10,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
-	@GetMapping("/hello")
-	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("Hello %s!", name);
-	}
-	
-	@GetMapping("/home")
-	public String home() {
-		return "There's no place like Home.";
-	}
-	
-	@GetMapping("/add")
-	public String add(@RequestParam(value = "firstNumber", defaultValue = "0") int firstNumber, @RequestParam(value = "secondNumber", defaultValue = "0") int secondNumber) {
-		return String.format("Adding %d to %d equals %d!", firstNumber, secondNumber, (firstNumber+secondNumber));
-	}
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return String.format("Hello %s!", name);
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "There's no place like Home.";
+    }
+
+    @GetMapping("/add")
+    public String add(@RequestParam(value = "firstNumber", defaultValue = "0") int firstNumber, @RequestParam(value = "secondNumber", defaultValue = "0") int secondNumber) {
+        return String.format("Adding %d to %d equals %d!", firstNumber, secondNumber, (firstNumber + secondNumber));
+    }
 
 }
