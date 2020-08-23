@@ -29,7 +29,7 @@ public class DemoApplication {
 	
 	@GetMapping("/add")
 	public String add(@RequestParam(value = "firstNumber", defaultValue = "0") int firstNumber, @RequestParam(value = "secondNumber", defaultValue = "0") int secondNumber) {
-		return String.format("Adding %h to %h equals %h!", firstNumber, secondNumber, (firstNumber+secondNumber));
+		return String.format("Adding %d to %d equals %d!", firstNumber, secondNumber, (firstNumber+secondNumber));
 	}
 
 }
